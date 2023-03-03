@@ -1,0 +1,27 @@
+Para iniciá-lo, siga os passos abaixo:
+
+Copie o projeto e acesse a pasta do mesmo.
+
+# Instalar as dependências na pasta frontend e backend
+$ npm install
+
+# Iniciar o projeto na pasta backend
+$ yarn start ou npm start
+O servidor estará ativo no endereço http://localhost:3001/cooperado.
+
+# Iniciar o projeto na pasta frontend
+$ ng serve --open
+O app estará disponível no seu browser pelo endereço http://localhost:4200.
+
+OBS: Recarregue a página depois que o servidor estiver ativo.
+
+Para rodar os testes do projeto:
+
+# Karma e Jasmine
+$ ng test
+
+# CPF para consulta
+14744949002
+57155363758
+50487132068
+94654109420

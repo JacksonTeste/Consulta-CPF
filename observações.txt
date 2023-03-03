@@ -1,0 +1,12 @@
+* 1: Não foi feita a adaptação para os dispositíveis móveis, ou seja, ele ficará 
+com o layout correto só para a web, pois não tinha ainda as telas do figma para mobile.
+
+* 2: As imagens no figma não estavam liberadas para exportar, então fiz o recorte delas
+ pegando através do print, então se houver alguma imagem diferente do normal foi por conta
+disso.
+
+* 3: Não tem um exemplo de imagem caso a situação seja irregular, então usei uma imagem
+aleatória na internet que represente isso.
+
+* 4: Todos os botões que não fazem parte do teste ficaram sem ação, como por exemplo
+as dicas para admissão e as opões do menu.

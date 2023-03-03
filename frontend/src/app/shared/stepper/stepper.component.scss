@@ -1,0 +1,11 @@
+.stepper-position{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    .stepper{
+        width: 500px;
+    }
+}

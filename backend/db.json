@@ -1,0 +1,40 @@
+{  
+    "cooperado": [
+      {
+        "id": 1,
+        "name": "Luiz Gustavo",
+        "cpf": 14744949002,
+        "situation": "Regular",
+        "img": "regular.PNG",
+        "application": 5579324,
+        "current": 7784618
+      },
+      {
+        "id": 2,
+        "name": "Manuela Heloisa",
+        "cpf": 57155363758,
+        "situation": "Regular",
+        "img": "regular.PNG",
+        "application": 6478215,
+        "current": 9532581
+      },
+      {
+        "id": 3,
+        "name": "Joaquim Anderson",
+        "cpf": 50487132068,
+        "situation": "Irregular",
+        "img": "irregular.PNG",
+        "application": 9643670,
+        "current": 2368379
+      },
+      {
+        "id": 4,
+        "name": "Caroline Almeida",
+        "cpf": 94654109420,
+        "situation": "Irregular",
+        "img": "irregular.PNG",
+        "application": 4356594,
+        "current": 6571684
+      }
+    ]
+  }

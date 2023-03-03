@@ -1,0 +1,95 @@
+<app-stepper></app-stepper>
+
+<div class="content">
+    <div class="text">
+        <h1 class="content-title">Informe o CPF do futuro cooperado (a)</h1>
+        <p class="content-text">Se necessário, você poderá duplicar uma conta existente ou passar a retomar este cadastro futuramente.</p>
+        <p class="content-text">Digite apenas os números (sem pontos ou traços).</p>
+    </div>
+    <div class="consult">
+        <label class="consult-label">CPF</label>
+        <div class="field">
+            <form [formGroup]="formValues">
+                <input 
+                    type="text" 
+                    class="consult-field"
+                    [(ngModel)]="cpf" 
+                    formControlName="cpf" 
+                    mask="000.000.000-00" 
+                    placeholder="000.000.000-00"
+                    [ngClass]="{'error': invalidCPF }" 
+                >
+                
+                <button class="consult-bt" (click)="cpfField()" [ngClass]="{'bt-transparent': cpfReleased}">
+                    <span class="bt-text" *ngIf="btText">Consultar por CPF</span>
+                    <span class="loader" *ngIf="btLoader"></span>
+                </button>
+            </form>
+            <span class="field-error" *ngIf="invalidCPF">Informe um CPF válido</span>
+        </div>
+    </div>
+    <div class="infos" *ngIf="cpfReleased">
+        <div class="block-one">
+            <div class="block-text">
+                <h2 class="block-title">Situação cadastral do CPF</h2>
+                <p class="block-text-one">Consulta na Receita Federal</p>
+            </div>
+            <div class="info-one">
+                <img class="info-icon" src="../../../assets/icon/name.PNG">
+                <div class="info-text">
+                    <p class="text-one">Nome</p>
+                    <p class="text-two">{{ infoCooperado[0].name }}</p>
+                </div>
+            </div>
+            <div class="info-two">
+                <img class="info-icon" src="../../../assets/icon/{{ infoCooperado[0].img }}">
+                <div class="info-text">
+                    <p class="text-one">Situação do CPF</p>
+                    <p class="text-two">{{ infoCooperado[0].situation }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="block-two">
+            <div class="block-text">
+                <h2 class="block-title">Conta aplicação</h2>
+                <p class="block-text-one">Cooperativa Viacredi</p>
+            </div>
+            <div class="info-one">
+                <img class="info-icon" src="../../../assets/icon/card.PNG">
+                <div class="info-text">
+                    <p class="text-one">Número da conta</p>
+                    <p class="text-two">{{ infoCooperado[0].application | mask: '000000-0' }}</p>
+                </div>
+            </div>
+            <div class="info-three">
+                <div class="info-text">
+                    <a class="duplicar" href="javascript:;">Duplicar conta</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-three">
+            <div class="block-text">
+                <h2 class="block-title">Conta corrente</h2>
+                <p class="block-text-one">Cooperativa Viacredi</p>
+            </div>
+            <div class="info-one">
+                <img class="info-icon" src="../../../assets/icon/card.PNG">
+                <div class="info-text">
+                    <p class="text-one">Número da conta</p>
+                    <p class="text-two">{{ infoCooperado[0].current | mask: '000000-0' }}</p>
+                </div>
+            </div>
+            <div class="info-three">
+                <div class="info-text">
+                    <a class="duplicar" href="javascript:;">Duplicar conta</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer" [ngClass]="{'footer-align': footer }">
+    <button class="footer-bt-one" *ngIf="cpfReleased">Iniciar nova admissão</button>
+    <button class="footer-bt-two">Dicas para admissão</button>
+</footer>
+
