@@ -1,0 +1,11 @@
+Anderson Matte Tamborim
+
+Link Medium: https://medium.com/@anderson.matte/exemplo-de-bff-back-end-for-front-end-b71512786a86 
+Link Github: https://github.com/andersonmatte/exemplobff 
+Link JSON Placeholder: https://jsonplaceholder.typicode.com/ 
+Link Spring Initializr: https://start.spring.io/ 
+Link Linkedin Anderson Matte: https://www.linkedin.com/in/andersonmatte/
+
+Exemplo de BFF (back-end for front-end)
+Imagine um APP que em sua tela de detalhes do usuário precisa apenas exibir “nome”, “email” e “usuario”, do usuário logado. Com a estrutura…
+
